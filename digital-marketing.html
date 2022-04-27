@@ -104,7 +104,11 @@
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
               <div class="col d-flex align-items-start">
                 <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                  <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                      </svg>
                 </div>
                 <div>
                   <h3>Targeted Audience</h3>
@@ -113,7 +117,9 @@
               </div>
               <div class="col d-flex align-items-start">
                 <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                  <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-broadcast-pin" viewBox="0 0 16 16">
+                        <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z"/>
+                      </svg>
                 </div>
                 <div>
                   <h3>Digital Channels</h3>
@@ -122,7 +128,9 @@
               </div>
               <div class="col d-flex align-items-start">
                 <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                  <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                      </svg>
                 </div>
                 <div>
                   <h3>Paid Ad Placement</h3>
@@ -204,76 +212,31 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat">
-        <div class="container px-4 py-5" id="custom-cards">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Case Study</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Company</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>Metric</small>
-                      </li>
-                    </ul>
-                  </div>
+<div class="modal modal-signin position-static d-block  py-5" tabindex="-1" role="dialog" id="modalSignin">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content rounded-5 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <!-- <h5 class="modal-title">Modal title</h5> -->
+                  <h2 class="fw-bold mb-0">Strategy Session</h2>
+                  
                 </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Case Study</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Company</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>Metric</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Case Study</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Company</small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>Metric</small>
-                      </li>
-                    </ul>
-                  </div>
+          
+                <div class="modal-body p-5 pt-0">
+                  
                 </div>
               </div>
             </div>
           </div>
-
     </section>
     <section id="digital-marketing-process">
-        
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                    <script>
+                        hbspt.forms.create({
+	                    region: "na1",
+	                    portalId: "21230935",
+	                    formId: "35ba7deb-2186-4e79-98f7-4177c5e0073c"
+                        });
+                    </script>
     </section>
 
             <!--footer-->
