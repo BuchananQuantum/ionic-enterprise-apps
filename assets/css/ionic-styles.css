@@ -18,3 +18,12 @@
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     margin-top: 10px;
 }
+.icon-square{
+display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 0.75rem;
+}
